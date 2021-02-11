@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Hello! Amaze!</title>
+<title>The Great Big Chemist Escape!</title>
 <style>
 body
 {
@@ -19,72 +19,84 @@ body
 <body>
 <div id="game"></div>
 <div id="readme">
-<h2>Your game title</h2>
+<h2>The Great Big Chemist Escape!</h2>
 
 <ul>
 <li><strong>Originality:</strong>
-What is original about your game?
+This game's originality is based off of a twist from a basic platformer. The player will come across obstacles that will test their mind to read patterns. Before another part of the stage can unlock, the player MUST execute other steps to be able to reach other platforms.
 </li>
 
 <li><strong>Technical Merit:</strong>
-What is interesting about your game technology?
+There are several different types of game technology that have been implemented for this game. Each action the player takes to interact with the environment will create a different sound. Different parts of the map will only be unlocked following the player passing a checkpoint. Enemies may be stagnant, but their bounce plays a part in how the player must avoid hitting them! Player's can also move around objects in order to reach certain platforms using Phaser Physics. Beyond this, the player's animations were specified using a sprite sheet for better-looking movement.
 </li>
 
 <li><strong>Prototype Postmortem:</strong>
-What did you learn from this prototype?
-What was the easiest or hardest part of making it?
+From this prototype, I learned a lot about how platformers work. The technicality of ensuring that the player can reach platforms pertaining to their bounce levels is very important. Also, incorporating enemies that the player can interact with make the game much more interesting. Including all of these taught me how many elements there are needed to really create a great platformer game. The easiest part of the game was creating the actual map and background along with the platforms. The hardest part was having to consider how EVERY single element in the game interacts with each other. Having and incorporating checkpoints was also a bit challenging as there were certain thresholds that needed to be passed in order to reveal the checkpoint. One of the hardest parts of this game was learning how to incorporate and use sprites so that the player can look like they're actually moving in a certain direction.
 </li>
 
 <li><strong>Prototype Assets:</strong>
-Did you make your prototype assets from scratch? Did you borrow them? Cite your sources here.
+Most assets were obtained through different sources. Here are the links:
 <ul>
-<li>Bouncing Phaser image: <a href="https://phaser.io/download/logo">Phaser logo</a></li>
+<li><a href="https://twitter.com/francescadevivo/status/1053190937193656320">Laboratory Background</a></li>
+<li><a href="http://pixelartmaker.com/art/8b5343fcafe1dab">Beakers</a></li>
+<li><a href="https://opengameart.org/content/alien-2d-sprites">Aliens</a></li>
+<li><a href="https://forum.starmen.net/forum/Fan/Games/Looking-for-an-RPG-maker-XP-sprite-sheet/first">Chemist</a></li>
+<li><a href="https://pixelworlds.fandom.com/wiki/Lab_Control_Panel_1">Control Panel</a></li>
+<li><a href="http://pixelartmaker.com/art/bd2d7a8d7a149c5">Crates</a></li>
+<li><a href="https://www.artstation.com/marketplace/p/KLYO/door-pixel-art">Door</a></li>
+<li><a href="https://www.scirra.com/store/backgrounds-for-games/2d-pixel-factory-4109">Platforms</a></li>
+<li><a href="https://www.pngwing.com/en/free-png-kubkt">Portal</a></li>
+<li><a href="http://www.gameburp.com/free-game-sound-fx/">All Sounds</a></li>
+<li><a href="https://www.youtube.com/watch?v=GLofDrMslZw&t=0s&ab_channel=RoyaltyFreeMusic-NoCopyrightMusic">Main Music</a></li>
 </ul>
 </li>
 
 <li><strong>Prototype Closest Other Game:</strong>
-Which other game most closely resembles your game? If you are borrowing code from a Phaser Example, you must say so here. If you borrow code from elsewhere, you must say so here.
+The game that most resembles my game is the 'Making your first Phaser 3 game' example from Phaser, which details how to make a simple platformer game:
+<ul>
+<li>Making your first Phaser 3 game: <a href="https://phaser.io/tutorials/making-your-first-phaser-3-game">Making your first Phaser 3 game</a></li>
+</ul>
 </li>
 
 <li><strong>High Concept:</strong>
-A one-sentence summary of your game.
+After a group of aliens come into a chemist's lab and steal his beakers and laboratory equipment, it's your job to help him get back his beakers and escape by opening a portal!
 </li>
 
 <li><strong>Theme:</strong>
-State which of the Storymatic themes you used.
+Chemist
 </li>
 
 <li><strong>Mandated Variety:</strong>
-State which input, randomness, genre, and play style you used in this prototype.
+The inputs for this game are the directional arrow keys for moving left, right, and jumping up (spacebar) from the keyboard. The randomness is mostly deterministic as there aren't many random elements in the game. The playstyle is collector as the player will need to collect the chemist's beakers. It is a bit of an explorer where the chemist will need to explore and collect items on the platforms to explore new parts of the map. The genre is a platformer.
 </li>
 
 <li><strong>Prototype Goal:</strong>
-What game mechanic is this prototype evaluating?
+The goal of this prototype was to learn mechanics such as a sprite's movement, jumping, and collection of other elements. The other goal is to evaluate how different elements interact through Phaser Physics. Lastly, another goal was to accurately measure how bouncing would register with platforms or other objects.
 </li>
 
 <li><strong>Player Experience Goals:</strong>
-What experience do you want players to have when playing your game?
+I want players to feel appeal towards the game due to the matching background, player, and map components. The player should feel excited as they move throughout the map, collect beakers, and hear varying sounds as they interact with elements on the map. The music and gameplay should make players feel adventurous.
 </li>
 
 <li><strong>Gameplay:</strong>
+The player moves a chemist using directional arrow keys. The player can also perform actions such as jumping or pushing; the player can push the crates in the map and also stack them by dropping a crate onto another one. The player can hover over beakers and collect them, which increases the score. The player will have to follow the system dynamics of avoiding the enemies, which are aliens that are bouncing. If the player collides with them, then it's game over. Once all beakers are collected, a portal will appear, but more enemies will also appear. The player needs to find a way to escape by reaching the portal. Game play that is not in this prototype is the existence of more levels once the portal is reached. The portal is a sort of checkpoint that moves the player to a completely different level.
 A paragraph describing the actions the player can perform, the system dynamics, and the core mechanic. Include a concise explanation of the prototype’s inputs and their expected effects (how to play). You can also describe game play that is not in the prototype. You may include mock-up images for parts of the game not in the prototype.
 </li>
 
 <li><strong>Strategies:</strong>
-What player strategies do you expect will be effective at playing this game?
+The player will need to have a strong eye as the way they jump can help them avoid surrounding enemies. Also, interacting with other elements to provide height (by stacking crates) will also be useful in reaching higher platforms.
 </li>
 
 <li><strong>Story/Setting/Premise:</strong>
-A paragraph about the world your game is set in and who the characters are. What makes the game world and its occupants unique and interesting? Do the tokens represent something? If the game has a backstory, mention it here. If the game is abstract, then say so.
-How will the dramatic tension interact with the gameplay tension?
+The main character is Gary, a pretty normal chemist who creates chemical concoctions in his beakers, test tubes, and other lab equipment. However, one day, his lab becomes infested with aliens that steal his creations! The aliens LOVE drinking his chemicals, which is why they stole them in the first place. Gary is pretty bold, and instead of asking for others for help, he enters his laboratory himself to take back his beakers and escape. It's your job as the player to help navigate as Gary to take back what's his. The dramatic tension of this game is that Gary is a pretty average human whose going against powerful aliens. The best way that Gary can avoid them is by jumping around them, which is the gameplay tension. If Gary comes too close or touches the aliens, he will die! 
 </li>
 
 <li><strong>Target Audience:</strong>
-A single sentence that describes the demographic you're trying to reach.
+A wide range of players who enjoy science/adventure-based games can enjoy this game as the mechanics and directions are simple and enjoyable.
 </li>
 
 <li><strong>Play Time:</strong>
-How long does your game take to play?
+The game can be played within 5 minutes.
 </li>
 
 </ul>
