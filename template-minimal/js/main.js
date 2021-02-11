@@ -59,6 +59,7 @@ const game = new Phaser.Game({
     parent: 'game',
     width: 800,
     height: 600,
+    backgroundColor: '#3598d6',
     scene: MyScene,
     physics: { default: 'arcade' },
     });
