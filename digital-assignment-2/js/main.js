@@ -59,7 +59,7 @@ function create() {
     music = this.sound.add('music');
     winSound = this.sound.add('win');
     loseSound = this.sound.add('lose');
-    music.play();
+    music.play({volume: 0.65});
 
     // defines the floor platform
     var platforms = this.physics.add.staticGroup();
