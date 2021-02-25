@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>The Thieves of the Seas</title>
+<style>
+body
+{
+    color: #777;
+    font-family: "Avenir", Verdana, sans-serif;
+}
+#readme
+{
+    margin-top: 10px;
+}
+</style>
+</head>
+
+<body>
+<div id="game"></div>
+<div id="readme">
+<h2>The Thieves of the Seas</h2>
+
+<ul>
+<li><strong>Originality:</strong>
+This game's originality comes from controlling a pirate ship and shooting cannons towards other enemy pirate ships. It seems like it would be a normal game where you direct a ship to avoid enemy ships, but cannons are incorporated where the player can only shoot sideways instead of directly forward. Also, there's treasure for the player collect as well as rocks for the player to avoid.
+</li>
+
+<li><strong>Technical Merit:</strong>
+The game technology is created using different aspects of Phaser. First, a scrolling background is used to make it seem like the player is actually moving in a direction in the water. Next, different groups are created. There are the enemy ships, treasures, and rocks. Every piece moves in a dynamic way, so tweens are used so that the ships sway left and right. This is so that the movement is not static and one dimensional. The player WILL have to move in order to avoid the enemy ships. There are also timers used to loop the creation of the elements. Delayed calls and loops are used to show text, create players, or start a new wave. Colliders and overlaps are also used in order to create the world that the player can move around in and interact with.
+</li>
+
+<li><strong>Prototype Postmortem:</strong>
+From this prototype, I again learned a lot about how to incorporate randomness and timers into gameplay. Instead of the player having the same experience playing the game every time, there were different variations. I also learned how to use tweens for my elements, which was the hardest part. Learning how to incorporate a tween into Phaser 3 as well as learning the different type of ease's was a challenging process (there are different eases such as Linear, Bounce, or Sine). The easiest part wa putting together the assets, such as spritesheets, images, and sound, so that they fit well into the game.
+</li>
+
+<li><strong>Prototype Assets:</strong>
+Most assets were obtained through different sources. Here are the links:
+<ul>
+<li><a href="https://rpgmaker.net/forums/topics/16614/">Pirate Ship</a></li>
+<li><a href="https://www.pngkit.com/bigpic/u2e6a9i1w7a9o0i1/">Enemy Pirate Ship</a></li>
+<li><a href="https://mgorly.tumblr.com/post/177275328851/pixel-art-made-by-me-and-animated-by-pruz/embed">Treasure Chest</a></li>
+<li><a href="https://www.deviantart.com/mscotton/art/Water-Tileset-01-538155842">Water</a></li>
+<li><a href="https://www.silvermansound.com">Main Music: The Buccaneer's Haul by Shane Ivers</a></li>
+<li><a href="https://freemusicarchive.org/">Sound Effects</a></li>
+<li><a href="http://pixelartmaker.com/art/3d079d40b6d7ac5">Rocks</a></li>
+<li><a href="https://opengameart.org/content/pixel-explosion-12-frames">Explosion</a></li>
+</ul>
+</li>
+
+<li><strong>Prototype Closest Other Game:</strong>
+The prototype most closely resembles two games, which are my Digital Assignment 2 game (for randomness) and the Phaser Invader's Game example (for incorporating tweens and shooting). My game is a close blend of both. From Digital Assignment 2, I took the element of randomness of spawning enemies and elements at a random time. From the Phaser Invader game, I took inspiration from the shooting of enemies (which I changed to shooting sideways and into two direction instead of just one).
+<ul>
+<li>Phaser Invader's: <a href="https://phaser.io/examples/v2/games/invaders">Invader's</a></li>
+<li>Digital Assignment 2: Refer to DA 2 on Home Page</li>
+</ul>
+</li>
+
+<li><strong>High Concept:</strong>
+Control your pirate ship as you capture treasure, avoid enemy ships, and possibly destroy enemy ships in your path!
+</li>
+
+<li><strong>Theme:</strong>
+'Pirate'
+</li>
+
+<li><strong>Mandated Variety:</strong>
+The inputs for this game are the directional arrow keys for moving left, right, up and down. The game is mostly determined by its randomness as the player needs to avoid both the enemy ships and rocks coming in its path. At the same time, the player needs to collect as many treasure chests as they can. The playstyle is mainly collector and director as the player needs to both collect items and direct their ship in the direction they choose.
+</li>
+
+<li><strong>Prototype Goal:</strong>
+The goal of this prototype was to learn how to use tweens and randomness into the game in a meaningful way. The ship's needed to 'sway' so that the game was more difficult and moved more smoothly. The player will need to interact with this combination of the 'swaying' and randomness of spawns constantly as they will need to avoid the ships in the direction that they move in.
+</li>
+
+<li><strong>Player Experience Goals:</strong>
+I want players to feel excited as they start the game and hear the Pirate themed music. The artstyle of the game is very basic, but I feel that the assets fit well together and make the game more polished and enjoyable for an audience. The player should feel tension and worry as they move away from the enemy ships. But they should also have fun when shooting the other ships with the cannons to earn points.
+</li>
+
+<li><strong>Gameplay:</strong>
+The player moves a ship using directional arrow keys. The player will have to follow the system dynamics of avoiding the enemy ships that spawn througout the water. If the player collides with an enemy ship, they lose. They can also shoot the enemy ship. The player can press 'X' to shoot left and 'C' to shoot right. There are also floating treasures throughout the map, where collecting them will earn the player many points. However, there are also rocks that could damage the ship. The player can only collide with 10 rocks before their ship destroys itself due to the damage. The game is endless, so the player can play as long as they can; all they have to do is beat their best score!
+</li>
+
+<li><strong>Strategies:</strong>
+The player will need to have quick reflexes as a strategy as ships and rocks could sway towards them. So, they would have to quickly react and move out of the way.
+</li>
+
+<li><strong>Story/Setting/Premise:</strong>
+Aye aye! You just stole the highly coveted treasure of Treasure Island. But, before you could get away, you noticed a fleet of enemy pirates coming towards you. They know you have the famous treasures aboard your ship! Now, as you leave, they're sending dozens of ships towards you to steal the famous treasure. Use your skills to avoid the enemy ships (and maybe destroy them). Oh yeah, there's also some treasure you can collect on the way home (collect as much as you can). But, avoid the rocks on the way, those can create holes on your ship and possibly destroy it!
+</li>
+
+<li><strong>Target Audience:</strong>
+Players who love pirate themed games would really enjoy the feeling that would come with playing this adventurous game.
+</li>
+
+<li><strong>Play Time:</strong>
+The game infinitely runs, so it can be played for however long.
+</li>
+
+</ul>
+</div>
+
+<!-- main.js must come at the end since it expects the HTML to have been created. -->
+<script src="js/main.js" type="module"></script>
+</body>
+</html>
