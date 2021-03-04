@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Grandma Needs Help!</title>
+<style>
+body
+{
+    color: #777;
+    font-family: "Avenir", Verdana, sans-serif;
+}
+#readme
+{
+    margin-top: 10px;
+}
+</style>
+</head>
+
+<body>
+<div id="game"></div>
+<div id="readme">
+<h2>Grandma Needs Help!</h2>
+
+<ul>
+<li><strong>Originality:</strong>
+This game's originality comes from controlling the main character, a grandma, who has turned miniature in her own kitchen. She needs to navigate around the large kitchen as she collects her cookies and finds her missing dogs. But, she needs to avoid coming into contact with ghosts that have chosen to haunt her kitchen.
+</li>
+
+<li><strong>Technical Merit:</strong>
+The game technology is assembled using different technologies from Phaser. First, the camera is zoomed so that it focuses on the player at all times. There are different groups for different parts of the environment that the main character can interact with. There are things that the player can move or jump on. The player can also collect items. Lastly, the player can interact with different light switches, which enables the player to reach a closed off side of the map. The ghosts on the map move around constantly, which was incorporated using tweens. Something that was important in this is that there is the spotlight effect, so the player has to use their mouse to help them see their surroundings.
+</li>
+
+<li><strong>Prototype Postmortem:</strong>
+From this prototype, I learned how to make it so that certain conditions are only satisfied until the player has done previous actions. I tried to make it more of a puzzle game so that the player has to do certain things first. Instead of it just being a simple platformer, the player actually has to move around a lot and interact with the environment they are in. The hardest part was incorporating the spotlight effect into the map. Instead of just having a static spotlight, the lights and shadows actually work with each other, which makes the map look much better.
+</li>
+
+<li><strong>Prototype Assets:</strong>
+Most assets were obtained through different sources. Here are the links:
+<ul>
+<li><a href="https://www.divine-pride.net/database/npc/29228/munaks-grandma">Grandma</a></li>
+<li><a href="https://master-blazter.itch.io/ghostspritepack">Ghosts</a></li>
+<li><a href="https://www.deviantart.com/nhe1/art/Kitchen-459587201">Kitchen</a></li>
+<li><a href="https://www.pngitem.com/middle/hJmomiJ_coke-bottle-pixel-art-hd-png-download/">Coke Bottle</a></li>
+<li><a href="https://www.pinterest.com/pin/756745543612026017/">Dogs</a></li>
+<li><a href="https://scratch.mit.edu/users/Hot-Cookie/">Cookies</a></li>
+<li><a href="http://pixelartmaker.com/art/9302e491c4282b7">Fire</a></li>
+<li><a href="https://www.youtube.com/watch?v=uQbzK4OROjQ&ab_channel=BreakingCopyright%E2%80%94MusicForVideos%26Streams">Main Music</a></li>
+<li><a href="https://www.youtube.com/watch?v=dSX72mTzARk&ab_channel=CityLightsSoundEffects-Topic">Sound Effects</a></li>
+</ul>
+</li>
+
+<li><strong>Prototype Closest Other Game:</strong>
+The prototype most closely resembles other simple platformers that are a part of Phaser, for example, this tutorial on a Mario style platformer. I also referred a lot to the previous platformer I made (DA1).
+<ul>
+<li>Mario Style Platformer: <a href="https://gamedevacademy.org/how-to-make-a-mario-style-platformer-with-phaser-3/">Platformer</a></li>
+<li>Digital Assignment 1: Refer to DA 1 on Home Page</li>
+<li>Lighting Effects: <a href="https://phaser.io/examples/v3/view/game-objects/lights/tilesprite-light">2DLight Effects</a></li>
+https://phaser.io/examples/v3/view/game-objects/lights/tilesprite-light
+</ul>
+</li>
+
+<li><strong>High Concept:</strong>
+Help this miniature grandma move around in her kitchen while collecting her lost cookies and dogs, all while avoiding the ghosts haunting her.
+</li>
+
+<li><strong>Theme:</strong>
+'Elderly Person'
+</li>
+
+<li><strong>Mandated Variety:</strong>
+The inputs for this game are the WASD keys so that the character can move. At the same time, the mouse input plays a role as it determines where the spotlight is so that a player can see. The game is mostly deterministic, and the only randomness comes from the ghosts moving around constantly. The player needs to collect cookies and dogs that are spread throughout the map. The playstyle is mostly collector and the game in general is sort of a puzzle-platformer.
+</li>
+
+<li><strong>Prototype Goal:</strong>
+The goal of this prototype was to learn how to make a map meaningful in a game. Instead of just having a static background, the player really interacts with different aspects of the background. This makes the game feel more complete. Another goal was to learn how to use a new type of lighting which helped the game look much more polished.
+</li>
+
+<li><strong>Player Experience Goals:</strong>
+I want players to feel thrilled as they enter and move around the kitchen. The artstyle consists of components that work well together. The player should feel some sort of tension that will guide them as they jump around and figure out where they need to go to continue on in the game.
+</li>
+
+<li><strong>Gameplay:</strong>
+The player moves using the WASD keys. The player also uses the mouse as input for the spotlight so that they can see their surroundings. The player's goal is to collect all of the cookies and dogs that are lost throughout the map. If the player collides with any ghost or a flame, they lose. At one point, the player must figure out a puzzle of three light switches to determine how to turn off the stove in the kitchen. 
+</li>
+
+<li><strong>Strategies:</strong>
+The player will need to be able to get through puzzles and figure out next steps in a map that might not seem obvious at first.
+</li>
+
+<li><strong>Story/Setting/Premise:</strong>
+Uhhh...So Grandma just turned miniature? She has her three favorite dogs at home, but now she can't seem to find them. Not only this, but the cookies she just baked are missing too. Help Grandma find her lost dogs and cookies. But, watch out! There are ghosts that are haunting her kitchen, looking for some food to eat. If they come in contact with Grandma, she'll die. All while this is going on, the lights aren't working, so the only way that Grandma can see is through the flashlight she found in her cabinet.
+</li>
+
+<li><strong>Target Audience:</strong>
+Players who love platformers with cool art would like this game.
+</li>
+
+<li><strong>Play Time:</strong>
+The game should last around less than 5 minutes.
+</li>
+
+</ul>
+</div>
+
+<!-- main.js must come at the end since it expects the HTML to have been created. -->
+<script src="js/main.js" type="module"></script>
+</body>
+</html>
