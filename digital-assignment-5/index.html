@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>The Scorpions at the Oasis (Iteration) </title>
+<style>
+body
+{
+    color: #777;
+    font-family: "Avenir", Verdana, sans-serif;
+}
+#readme
+{
+    margin-top: 10px;
+}
+</style>
+</head>
+
+<body>
+<div id="game"></div>
+<div id="readme">
+<h2>The Scorpions at the Oasis (Iteration) </h2>
+
+<ul>
+<li><strong>Originality:</strong>
+This game's originality comes from a player having to navigate around falling scorpions in 20 seconds. It seems pretty easy, but the frequency at which the scorpions fall is a bit challenging.
+</li>
+
+<li><strong>Technical Merit:</strong>
+The game technology is created using several features. Character's are not one dimensional; as the character moves, its sprite makes it seem as if the character is actually walking around. Most of the game's technology and driving factor is the use of different timers, such as delayed calls and loops, in order to drop the enemies at different locations. Colliders and overlaps are also used in order to create the world that the player can move around in and interact with. 
+</li>
+
+<li><strong>Prototype Postmortem:</strong>
+From this prototype, I learned a lot about how to incorporate randomness and timers into gameplay. Instead of having the same exact game every time, I was able to make variations of it every time. The hardest part was definitely creating the delayed call timers and loop timers. This is because I had to create a delayed call timer which ran a callback function that started a loop timer. Essentially, it was like making a timer within a timer. This was done for both dropping the enemies after 10 seconds as well as having the text timers for the countdown and in game timer. The easiest part was putting together the assets so that they fit well with the map.
+</li>
+
+<li><strong>Prototype Assets:</strong>
+Most assets were obtained through different sources. Here are the links:
+<ul>
+<li><a href="https://www.reddit.com/r/PixelArt/comments/5yf987/oc_oasis_pixel_dailies/">Oasis Background</a></li>
+<li><a href="https://opengameart.org/content/desert-enemy-pixel-art-game-characters">Scorpions Sprites</a></li>
+<li><a href="https://craftpix.net/freebies/free-villagers-sprite-sheets-pixel-art/">Villager Sprites</a></li>
+<li><a href="https://freesound.org/people/LittleRobotSoundFactory/packs/16681/">Sound Effects</a></li>
+<li><a href="https://www.youtube.com/watch?v=VytNDhui7-g&ab_channel=TeknoAXE%27sRoyaltyFreeMusic">Main Music</a></li>
+<li><a href="http://pixelartmaker.com/art/0cfa6c7a0cfcd1c">Fireballs</a></li>
+<li><a href="https://www.deviantart.com/jaylastar/art/Tumbleweed-Animation-Game-Jam-Asset-609215222">Tumbleweed</a></li>
+</ul>
+</li>
+
+<li><strong>Prototype Closest Other Game:</strong>
+Although I cannot currently recall a game like this from Phaser examples, the sprite's movement, map upload, and platform creation was inspired by the 'Making your first Phaser 3 game' example from Phaser, which details how to make a simple platformer game. Another game that follows a similar format, although not used for code reference, is a game called Winter Sprinter.
+<ul>
+<li>Making your first Phaser 3 game: <a href="https://phaser.io/tutorials/making-your-first-phaser-3-game">Making your first Phaser 3 game</a></li>
+<li>Winter Sprinter: <a href="https://phaser.io/news/2018/01/winter-sprinter">Game link</a></li>
+</ul>
+
+GAME ITERATION Changes (this game is iterated off of DA2) <a href="https://alishassharma.github.io/cs325-game-prototypes/digital-assignment-2/">Digital Assignment 2</a></li>
+<ul>
+<li>Added Scene Transitions (Preloader, Main Menu, Game) -> Game can now go back to Main Menu if it ends without refreshing the page</li>
+<li>Added a Second Wave (with harder gameplay) -> Scorpions now have tweens</li>
+<li>Added Elements (ex. Tumbleweed // Another important feature of the game)</li>
+<li>Added Fireballs (The player can now destroy scorpions instead of only avoiding them)</li>
+<li>Fireballs are shot according to the current location of the player's cursor (added pointer capabilities)</li>
+<li>Changed directional arrow keys to WASD</li>
+<li>Added points collection (through destroying scorpions)</li>
+<li>Tuned player's gravity and map interaction</li>
+</ul>
+</li>
+
+<li><strong>High Concept:</strong>
+In 40 seconds, avoid the falling scorpions from the sky to win!
+</li>
+
+<li><strong>Theme:</strong>
+'Oasis' and 'Your Game takes exactly 20 seconds to play' (2 waves of 20 seconds)
+</li>
+
+<li><strong>Mandated Variety:</strong>
+The inputs for this game are the WASD keys for moving left, right, and jumping up from the keyboard. The game is determined by randomness as the player needs to avoid scorpions falling from the sky that spawn at random locations. The playstyle is director as the player needs to direct themselves to avoid the scorpions falling from the sky. The player also needs to shoot fireballs at the scorpions to destroy them. The genre is similar to a 'racing' type of feel, where the player needs to 'race' to the finish of 20 seconds while avoiding obstacles.
+</li>
+
+<li><strong>Prototype Goal:</strong>
+The goal of this prototype was to learn how to incorporate randomness into a game in a meaningful way. The player essentially 'interacts' with this randomness in a game-driven way, where the player will have to continuously move to survive.
+</li>
+
+<li><strong>Player Experience Goals:</strong>
+I want players to firstly enjoy the art and sounds of the game. Although the assets came from various sources, they fit together very well and make the game more enjoyable. The player should feel a lot of tension and should also feel challenged as the speed at which the scorpions spawn is a bit quick. If the spot the player's standing at is where a scorpion spawns, it's a bit nerve-wracking.
+</li>
+
+<li><strong>Gameplay:</strong>
+The player moves the character using WASD keys. The player can also perform actions such as jumping around the map. The player will have to follow the system dynamics of avoiding the enemies, which are the scorpions that are continuously falling for 40 seconds. If the player overlaps with them, then it's game over. There is also tumbleweed that the player needs to avoid. Along with this, the player now has the ability to shoot fireballs at the scorpions to destroy them. The player has 40 seconds before they win the game, so this whole game is a matter of survival.
+</li>
+
+<li><strong>Strategies:</strong>
+The player will need to have quick reflexes as a strategy as scorpions could spawn right above them. So, they would have to quickly react and move out of the way.
+</li>
+
+<li><strong>Story/Setting/Premise:</strong>
+The main character is Marcus, an inhabitant of a nearby village. When he gets stranded near a desert, he comes upon an oasis and drinks water to relieve his thirst. As soon as he does this, he notices that deadly and large scorpions start falling out of the sky! He can't escape fast enough as they're falling so frequently. He determines he has 40 seconds before he can make a break for it, so help him out in surviving these 40 seconds!
+</li>
+
+<li><strong>Target Audience:</strong>
+A wide range of players who enjoy survival games that are very short, but tense. Players who love adventure games would really like the theme.
+</li>
+
+<li><strong>Play Time:</strong>
+The game can be played in 40 seconds (2 waves of 20 seconds).
+</li>
+
+</ul>
+</div>
+
+<!-- main.js must come at the end since it expects the HTML to have been created. -->
+<script src="js/main.js" type="module"></script>
+</body>
+</html>
