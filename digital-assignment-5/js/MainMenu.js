@@ -1,4 +1,4 @@
-import {Button} from './Button.js';
+import {Button} from './button.js';
 
 export class MainMenu extends Phaser.Scene {
 
