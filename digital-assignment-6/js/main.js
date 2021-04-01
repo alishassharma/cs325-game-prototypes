@@ -368,7 +368,6 @@ function update() {
 
 function randomInteger(lowest_number, highest_number) {
     return Phaser.Math.Between(lowest_number, highest_number);
-    //return Math.floor(Math.random() * (highest_number - lowest_number + 1)) + lowest_number;
 }
 
 function endGame() {
