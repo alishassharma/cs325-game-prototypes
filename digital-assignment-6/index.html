@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Close to 10!</title>
+<style>
+body
+{
+    color: #777;
+    font-family: "Avenir", Verdana, sans-serif;
+}
+#readme
+{
+    margin-top: 10px;
+}
+</style>
+</head>
+
+<body>
+<div id="game"></div>
+<div id="readme">
+<h2>Close to 10!</h2>
+
+<ul>
+<li><strong>Originality:</strong>
+Close to 10!'s originality is based off of a twist of BlackJack, which requires a player to reach a value closest to 21. In this one, however, the value is 10 and there are other options provided to the player in order to manipulate a card's value.
+</li>
+
+<li><strong>Technical Merit:</strong>
+Tweens were used to create a beginning cutscene/introduction scene, which is something I haven't done before. These tweens used alpha's, which are used for fading in or fading out assets. Also, math randomization is another technical aspect of the game as the numbers provided to the player are random in every single play.
+</li>
+
+<li><strong>Prototype Postmortem:</strong>
+From this prototype, I learned how to make a card game into a digital card game. Usually, I did platformers or other types of games, but this was an interesting experience in trying to develop a game that requires more 'mathematical' programming. I also learned how to create a cutscene from this prototype, which is something a lot of games implement (so this is something I would definitely use in the future). The easiest part of the prototype was adding in the text and making the actual layout of the game. The hardest part was coding in the actions that the player can make (such as Pass, Add, Double, or Half). Each of those had to consider which card hasn't been drawn yet of the 3 and also if the action had been previously done. This was hard as I've never had to use math randomization in my games before like this, where the number is actually used by the player.
+</li>
+
+<li><strong>Prototype Assets:</strong>
+<ul>
+<li>52 Playing Cards: <a href="http://acbl.mybigcommerce.com/52-playing-cards/">Cards</a></li>
+<li>Music: <a href="https://www.youtube.com/watch?v=DGJ_td03SoU&ab_channel=TeknoAXE%27sRoyaltyFreeMusic">Card Game Music</a></li>
+</ul>
+</li>
+
+<li><strong>Prototype Closest Other Game:</strong>
+Another game that I loosely took inspiration from for this game is BlackJack. The objective of BlackJack is to reach the closest value to 21 compared to the dealer, while my game only involves the player trying to reach 10. My game also involves the option to pass, add, double the card's value, or half the card's value.
+</li>
+
+<li><strong>High Concept:</strong>
+In Close to 10!, reach the value of 10 by choosing to add, pass, double the value, or half the value of the number you're given!
+</li>
+
+<li><strong>Theme:</strong>
+Optional this week. None of the provided used.
+</li>
+
+<li><strong>Mandated Variety:</strong>
+Mandated Variety no longer considered. However, the input is keyboard characters, and the randomness is purely random as the random numbers dictate the gameplay.
+State which input, randomness, genre, and play style you used in this prototype.
+</li>
+
+<li><strong>Prototype Goal:</strong>
+The game mechanic this prototype is evaluating is the drawing and use of random cards in a meaningful way (for the game). The main aspect of this game is drawing random cards. Another mechanic is the use of Adding, Passing, Doubling, or Halfing the card values.
+</li>
+
+<li><strong>Player Experience Goals:</strong>
+Players should not expect anything too intense, just a small and fun challenge to enjoy whenever they feel like playing a card game.
+</li>
+
+<li><strong>Gameplay:</strong>
+The player has 3 tries to reach the number 10. They can choose to Pass the card by pressing the letter P. This means the card value won't be added to the sum. The player can choose to Add the card by pressing the letter A. This means that the card's full value is added to the sum. The player can also choose to Double the card's value. This means the card's value times 2 will be added to the sum. The player can, lastly, choose to Half the card's value. This means that half the card's value will be added to the sum (floored value). The player will either be just under 10, at 10, or over 10. Game play that is not in this prototype is multiple rounds where you earn points based on your sum that round. This will most likely be implemented in the next prototype.
+</li>
+
+<li><strong>Strategies:</strong>
+Players should definitely use the half and double perks to their advantage. If they have a high card already, they should consider halfing the value if a card gets them higher up or at 10 completely. Doubling is important when you're running out of tries and you need to reach 10 fast.
+</li>
+
+<li><strong>Story/Setting/Premise:</strong>
+This game is abstract in the sense that there really is no 'world' this game is set in. However, this could just be a setting where a dealer and you are playing cards, and this is a new game they have come up with. You play a few rounds of this game in this story setting.
+</li>
+
+<li><strong>Target Audience:</strong>
+Any lover of card games will enjoy a simple game such as Close to 10!.
+</li>
+
+<li><strong>Play Time:</strong>
+The game takes a few minutes to play (under 5).
+</li>
+
+</ul>
+</div>
+
+<!-- main.js must come at the end since it expects the HTML to have been created. -->
+<script src="js/main.js" type="module"></script>
+</body>
+</html>
