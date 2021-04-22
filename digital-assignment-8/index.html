@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Number Jump</title>
+<style>
+body
+{
+    color: #777;
+    font-family: "Avenir", Verdana, sans-serif;
+}
+#readme
+{
+    margin-top: 10px;
+}
+</style>
+</head>
+
+<body>
+<div id="game"></div>
+<div id="readme">
+<h2>Number Jump</h2>
+
+<ul>
+<li><strong>Originality:</strong>
+Number Jump isn't just a simple platformer. You might be jumping on platforms, but there's only a limited number of times you can actually jump in game! If you run out of jumps, you cannot move any further without restarting.
+</li>
+
+<li><strong>Technical Merit:</strong>
+This game involved the use of multiple .js files that each had different 'scenes' or levels, which is a technical aspect of creating the game that I haven't done much of before. Players can only progress through the game by reaching a 'checkpoint' in one scene so that another scene can start. Tweens are used in order to make the platformer more enjoyable and difficult.
+</li>
+
+<li><strong>Prototype Postmortem:</strong>
+From this prototype, I learned how to make an actual fully developed game with multiple stages. Usually, my game was confined to one scene, which made handling assets and other objects more difficult and confusing at times. Having multiple scenes definitely made the process easier as I was able to segment each scene from each other. Usually, well developed games won't just be confined to one scene of a game, so this was a good change as it also showed me how games I've played in real life use scenes. The easiest part was making the actual platformer as the concept was not difficult. It was a bit difficult implementing the scenes into the game at first, but as I continued making the game, it definitely became much more easier.
+</li>
+
+<li><strong>Prototype Assets:</strong>
+<ul>
+<li>Character: <a href="https://opengameart.org/content/3-character-sprite-sheets">Main Character</a></li>
+<li>Music: <a href="youtube.com/watch?v=wKrB28XBIuk&ab_channel=chucknorrisismyuncle">Game Music</a></li>
+<li>Main Menu Music: <a href="https://www.youtube.com/watch?v=DO31E4NeBt8&ab_channel=OneManSymphony">Main Menu Music</a></li>
+<li><a href="https://www.pngwing.com/en/free-png-kubkt">Portal</a></li>
+<li>All other assets, mainly the platforms, were made by myself</li>
+</ul>
+</li>
+
+<li><strong>Prototype Closest Other Game:</strong>
+I mostly took inspiration from most of the platformers I've played before, but just wanted to add a twist to it that made some sort of ability or resource limited. Since jumping is the main core mechanic to most platformers, I felt that this made the game more unique from a simple platformer.
+</li>
+
+<li><strong>High Concept:</strong>
+In Number Jump, move through platforms in multiple levels all while making sure you aren't running out of your main ability: Jumping...
+</li>
+
+<li><strong>Theme:</strong>
+Power down (somewhat): Losing abilities is the only way for your player to progress.
+</li>
+
+<li><strong>Mandated Variety:</strong>
+Mandated Variety no longer considered. However, the input is the arrow keys and spacebar. There is no randomness involved in this game.
+</li>
+
+<li><strong>Prototype Goal:</strong>
+The game mechanic this prototype is evaluating how a player might play to use up or preserve all of their jumps. The main core mechanic is jumping, but as a limited resource. This prototype took a look at the types of levels that would be involved in making this more difficult.
+</li>
+
+<li><strong>Player Experience Goals:</strong>
+Players should not feel too challenged as the game isn't too difficult. It's a bit like a puzzle game, so it takes some thinking which is enjoyable for players.
+</li>
+
+<li><strong>Gameplay:</strong>
+The player must progress through levels by jumping on platforms, all while maintaining the number of jumps they have. Once a player reaches the portal at the right side of the level, they can progress to the next level. The player can move using the arrow keys and spacebar to jump. The player can also press the R key to restart the level if they wish. Lastly, the player should avoid touching the black platforms.
+</li>
+
+<li><strong>Strategies:</strong>
+Players should make sure to keep an eye out on the gravity that the character has in the current level. That could make them 'cheat' out the level by jumping all the way to the portal if they wish. This strategy could help them complete the game much faster.
+</li>
+
+<li><strong>Story/Setting/Premise:</strong>
+In this game, the main character is Elise, who has been stuck in a simulation world for as long as she could remember. She discovers the only way out of this world is to jump through portals, but as she jumps through one, she only comes across a new challenge with another portal at the end. Elise has nothing else to do other than try to figure out how to get out of the simulation.
+</li>
+
+<li><strong>Target Audience:</strong>
+Anyone who likes platformers or puzzle games would enjoy this game.
+</li>
+
+<li><strong>Play Time:</strong>
+The game takes a few minutes to play (under 5).
+</li>
+
+</ul>
+</div>
+
+<!-- main.js must come at the end since it expects the HTML to have been created. -->
+<script src="js/main.js" type="module"></script>
+</body>
+</html>

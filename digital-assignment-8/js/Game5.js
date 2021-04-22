@@ -1,0 +1,167 @@
+export class Game5 extends Phaser.Scene {
+
+    constructor () {
+        // The parameter to super() is the name used when switching states,
+        // as in `this.scene.start(...)`.
+        super( 'Game5' );
+
+        this.player;
+        this.cursors;
+        this.portal;
+        this.jumps;
+        this.jumpsLeftText;
+        this.spacebar;
+        this.Rkey;
+    }
+
+    create() {
+        var levelText = this.add.text(20, 20, 'Level 5', { fontSize: '32px', fill: '#000000' });
+
+        this.jumps = 2;
+        var platforms = this.physics.add.staticGroup();
+        var movingplatforms = this.physics.add.group();
+
+        platforms.create(-50, 554, 'rectangle').refreshBody();
+        platforms.create(850, 554, 'rectangle').refreshBody();
+
+        //var plat1 = platforms.create(500, 330, 'platform1');
+        //var plat2 = platforms.create(300, 530, 'platform1');
+        var movingplat1 = movingplatforms.create(250, 250, 'platform1').setScale();
+        this.tweens.add({
+            targets: movingplat1,
+            x: 550,
+            duration: 800,
+            repeat: -1,
+            ease: 'Linear',
+            yoyo: true,
+        });
+        movingplat1.setTint('#FF0000');
+
+        var movingplat2 = movingplatforms.create(250, 550, 'platform1').setScale();
+        this.tweens.add({
+            targets: movingplat2,
+            x: 550,
+            duration: 800,
+            repeat: -1,
+            ease: 'Linear',
+            yoyo: true,
+        });
+        movingplat2.setTint('#FF0000');
+
+        var movingplat3 = movingplatforms.create(250, 250, 'platform1').setScale();
+        this.tweens.add({
+            targets: movingplat3,
+            y: 550,
+            duration: 800,
+            repeat: -1,
+            ease: 'Linear',
+            yoyo: true,
+        });
+        movingplat3.setTint('#FF0000');
+
+        var movingplat4 = movingplatforms.create(550, 250, 'platform1').setScale();
+        this.tweens.add({
+            targets: movingplat4,
+            y: 550,
+            duration: 800,
+            repeat: -1,
+            ease: 'Linear',
+            yoyo: true,
+        });
+        movingplat4.setTint('#FF0000');
+
+        var plat1 = platforms.create(400, 400, 'platform1');
+
+
+        this.player = this.physics.add.sprite(100, 100, 'player').setScale(1);
+        this.player.body.gravity.y = 900;
+        this.player.body.bounce.y = 0.1;
+        this.player.setCollideWorldBounds(true);
+        this.physics.add.collider(this.player, platforms);
+
+        this.cursors = this.input.keyboard.createCursorKeys();
+
+        this.anims.create({
+            key: 'left',
+            frames: this.anims.generateFrameNumbers('player', { start: 0, end: 5 }),
+            frameRate: 10,
+            repeat: -1
+        });
+        
+        this.anims.create({
+            key: 'turn',
+            frames: [ { key: 'player', frame: 0 } ],
+            frameRate: 20
+        });
+        
+        this.anims.create({
+            key: 'right',
+            frames: this.anims.generateFrameNumbers('player', { start: 0, end: 5 }),
+            frameRate: 10,
+            repeat: -1
+        });
+
+        this.portal = this.physics.add.sprite(720, 290, 'portal').setScale(0.2);
+
+        this.anims.create({
+            key: 'movingPortal',
+            frames: this.anims.generateFrameNumbers('portal', { start: 0, end: 2 }),
+            frameRate: 5,
+            repeat: -1
+        });
+
+        this.portal.anims.play('movingPortal', true);
+        this.jumpsLeftText = this.add.text(370, 100, '', { fontSize: '86px', fill: '#000000' });
+        this.jumpsLeftText.setText(this.jumps);
+
+        this.physics.add.overlap(this.player, movingplatforms, this.restartGame, null, this);
+
+        var tutorialText7 = this.add.text(20, 60, 'Press R to restart the level!', { fontSize: '12px', fill: '#000000' });
+
+        this.spacebar = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.SPACE);
+        this.physics.add.overlap(this.player, this.portal, this.portalEndGame, null, this);
+        this.Rkey = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.R);
+    }
+
+    portalEndGame(player, portal) {
+        this.scene.start('EndGame');
+    }
+
+    restartGame() {
+        this.scene.restart();
+    }
+
+    update() {
+        
+        if (this.cursors.left.isDown)
+        {
+            this.player.setVelocityX(-350);
+            this.player.anims.play('left', true);
+            // horizontal direction is flipped if character turns left
+            this.player.flipX = true;
+        }
+        else if (this.cursors.right.isDown)
+        {
+            this.player.setVelocityX(350);
+            this.player.anims.play('right', true);
+            this.player.flipX = false;
+        }
+        else
+        {
+            this.player.setVelocityX(0);
+            this.player.anims.play('turn');
+        }
+
+        if (Phaser.Input.Keyboard.JustDown(this.spacebar) && this.player.body.touching.down && this.jumps > 0)
+        {
+            this.jumpsLeftText.setText(this.jumps);
+            this.player.setVelocityY(-400);
+            this.jumps = this.jumps - 1;
+            this.jumpsLeftText.setText(this.jumps);
+        }
+
+        if (this.Rkey.isDown || this.player.y > 560) {
+            this.scene.start('Game5');
+        }
+    }
+}
